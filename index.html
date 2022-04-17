@@ -19,24 +19,24 @@
                     <h5 class="text-center border-bottom py-3">مشخصات دانش آموز</h5>
                     <div class="general py-4 d-flex">
                         <div class="info">
-                            <form class="row g-3 needs-validation mx-auto py-2" novalidate>
+                            <form id="registrationForm" class="row g-3 needs-validation mx-auto py-2" novalidate>
                                 <div class="col-md-6 col-s-12 ">
                                   <label for="validationCustom01" class="form-label">نام و نام خانوادگی </label>
-                                  <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                  <input type="text" class="form-control" name="username" id="validationCustom01" value="" required>
                                   <div class="valid-feedback">
                                     Looks good!
                                   </div>
                                 </div>
                                 <div class="col-md-6 col-s-12">
                                   <label for="validationCustom02" class="form-label">کد ملی</label>
-                                  <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                  <input type="number" class="form-control" id="validationCustom02" placeholder="0123456789" required>
                                   <div class="valid-feedback">
                                     Looks good!
                                   </div>
                                 </div>
                                 <div class="col-md-6 col-s-12">
                                     <label for="validationCustom05" class="form-label">تاریخ تولد </label>
-                                    <input type="text" class="form-control" id="validationCustom05" required>
+                                    <input type="date" class="form-control" id="validationCustom05" required>
                                     <div class="invalid-feedback">
                                       Please provide a valid zip.
                                     </div>
@@ -70,14 +70,14 @@
                                 </div>
                                 <div class="col-md-6 col-s-12">
                                     <label for="validationCustom05" class="form-label"> تلفن ثابت</label>
-                                    <input type="text" class="form-control" id="validationCustom05" required>
+                                    <input type="number" class="form-control" id="validationCustom05" required>
                                     <div class="invalid-feedback">
                                       Please provide a valid zip.
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-s-12">
                                     <label for="validationCustom05" class="form-label">تلفن همراه </label>
-                                    <input type="text" class="form-control" id="validationCustom05" required>
+                                    <input type="number" class="form-control" id="validationCustom05" placeholder="09123456789" required>
                                     <div class="invalid-feedback">
                                       Please provide a valid zip.
                                     </div>
@@ -109,7 +109,7 @@
     
 
     
-
+    <script src="assets/javascript/formvalid.js"></script>
     <script src="assets/javascript/script.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
